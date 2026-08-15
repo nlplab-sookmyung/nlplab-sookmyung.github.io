@@ -99,16 +99,46 @@ announcements:
   article > h2 a[href$="/news/"],
   article > h2 a[href$="/publications/"] {
     font-size: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    text-decoration: none;
   }
-  article > h2 a[href$="/news/"]::after {
+  article > h2 a[href$="/news/"]::before {
     content: "Recent News";
     font-size: 1.4rem;
     font-weight: 700;
   }
-  article > h2 a[href$="/publications/"]::after {
+  article > h2 a[href$="/publications/"]::before {
     content: "Selected Publications";
     font-size: 1.4rem;
     font-weight: 700;
+  }
+  article > h2 a[href$="/news/"]::after,
+  article > h2 a[href$="/publications/"]::after {
+    content: "+";
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 1.6rem;
+    height: 1.6rem;
+    line-height: 1;
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid var(--global-divider-color);
+    border-radius: 50%;
+    color: var(--global-theme-color);
+    transition:
+      background 0.15s ease,
+      color 0.15s ease,
+      border-color 0.15s ease;
+  }
+  article > h2 a[href$="/news/"]:hover::after,
+  article > h2 a[href$="/publications/"]:hover::after {
+    background: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    color: #fff;
   }
 
   .news .table {
@@ -194,9 +224,9 @@ announcements:
 
 <div class="intro-block" markdown="1">
 
-SMU-NLP(숙명여자대학교 자연어처리 연구실)는 언어를 이해하고 생성하는 자연어처리(NLP) 기술을 중심축으로 삼습니다. 여기서 출발해 AI 에이전트, 평가(Evaluation), 리소스 구축, 인간 참여형(Human-integrated) AI, 그리고 연구 성과를 실제 문제로 옮기는 응용 전략까지 연구 범위를 넓혀가고 있습니다.
+SMU-NLP(숙명여자대학교 자연어처리 연구실)는 자연어처리(NLP)를 중심축으로 AI 에이전트, 평가(Evaluation), 리소스 구축, 인간 참여형(Human-integrated) AI, 응용 전략(Application Strategy)까지 연구 영역을 넓혀가고 있습니다.
 
-저희가 궁금해하는 질문은 결국 하나입니다. 언어모델이 실험실 밖, 그러니까 실제 환경에서도 믿을 만하게 작동하려면 무엇이 필요한가. 이 질문에 답하기 위해 언어 이해·생성의 핵심 기술을 다지는 한편, 스스로 계획하고 행동하는 에이전트 시스템을 설계하고, 모델과 시스템의 성능을 신뢰성 있게 재는 평가 방법론을 고민합니다. 여기에 더해 연구와 응용에 필요한 데이터셋·벤치마크를 직접 만들고, 사람과 AI가 함께 일하는 협업 구조를 실험하며, 그렇게 쌓은 결과를 실제 문제에 적용할 전략까지 함께 짭니다.
+저희는 아직 누구도 제대로 풀지 못한 도전적인 문제를 발굴하고, 자연어처리 연구의 프론티어를 넓히는 데 목표를 둡니다. 언어 이해·생성의 핵심 기술을 다지는 동시에 스스로 계획하고 행동하는 에이전트를 설계하고, 모델과 시스템의 성능을 신뢰성 있게 재는 평가 방법론을 세웁니다. 필요한 데이터셋과 벤치마크는 직접 구축하고, 사람과 AI가 함께 일하는 구조를 실험하며, 연구 결과를 실제 문제로 옮기는 전략까지 고민합니다.
 
 논문 목록은 [Google Scholar](https://scholar.google.com/citations?user=queGQ5UAAAAJ&hl=ko) 프로필에서도 보실 수 있습니다.
 
@@ -206,9 +236,9 @@ SMU-NLP(숙명여자대학교 자연어처리 연구실)는 언어를 이해하�
 
 <div class="intro-block" markdown="1">
 
-SMU-NLP — the Natural Language Processing Lab at Sookmyung Women's University — works outward from language understanding and generation, into AI agents, evaluation, resource building, human-integrated AI, and the harder question of how any of it holds up once it leaves the lab.
+SMU-NLP — the Natural Language Processing Lab at Sookmyung Women's University — works outward from language understanding and generation, into AI agents, evaluation, resource building, human-integrated AI, and turning research results into real applications.
 
-That's really the question driving us: what does it take for a language model to behave reliably outside a controlled setting? We chase it from several directions at once. We build the core techniques behind understanding and generating language, design agents that plan and act on their own, and work out evaluation methods that measure model and system performance in ways we can actually trust. We also build the datasets and benchmarks our own research depends on, explore how people and AI can work side by side, and figure out how to carry what we learn into real applications.
+Our goal is to find problems nobody has properly solved yet and push the frontier of NLP research forward. We build the core techniques behind understanding and generating language, design agents that plan and act on their own, and work out evaluation methods we can actually trust. We build our own datasets and benchmarks, explore how people and AI can work side by side, and carry what we learn into real applications.
 
 Our publications are also listed on our [Google Scholar](https://scholar.google.com/citations?user=queGQ5UAAAAJ&hl=ko) profile.
 
