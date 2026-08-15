@@ -5,8 +5,109 @@
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://nlplab-sookmyung.github.io/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/">about <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/news/">news </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">people </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"> SMU-NLP </h1> <p class="desc">Sookmyung Women's University Natural Language Processing Lab</p> </header> <article> <div class="profile float-right"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/prof_pic-480.webp 480w,/assets/img/prof_pic-800.webp 800w,/assets/img/prof_pic-1400.webp 1400w," type="image/webp" sizes="(min-width: 930px) 270.0px, (min-width: 576px) 30vw, 95vw"> <img src="/assets/img/prof_pic.jpg?v=974957d202f671e4fa6700c04e68deae" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="prof_pic.jpg" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </source></picture> </figure> <div class="more-info"> <p>TODO: 사무실 위치</p> <p>Sookmyung Women's University</p> </div> </div> <div class="clearfix"> <style>
+  :root {
+    --global-theme-color: #2c4a6e;
+    --global-hover-color: #3a6089;
+    --global-divider-color: rgba(15, 23, 42, 0.08);
+  }
+  html[data-theme="dark"] {
+    --global-theme-color: #86aed6;
+    --global-hover-color: #a5c4e3;
+    --global-divider-color: #33383f;
+  }
+
+  body {
+    font-weight: 400;
+  }
+
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 0.92rem;
+    letter-spacing: 0.03em;
+    padding-bottom: 0.35rem;
+    border-bottom: 2px solid transparent;
+  }
+  .navbar .navbar-nav .nav-item .nav-link:hover {
+    border-bottom-color: var(--global-divider-color);
+  }
+  .navbar .navbar-nav .nav-item.active > .nav-link {
+    border-bottom-color: var(--global-theme-color);
+  }
+
+  .post-title {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .post-header .desc {
+    font-size: 1.05rem;
+    color: var(--global-text-color-light);
+    margin-top: 0.25rem;
+  }
+
   footer[role="contentinfo"] {
     display: none !important;
+  }
+
+  .news .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .news .table tr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.5rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+  .news .table tr:first-child {
+    border-top: 1px solid var(--global-divider-color);
+  }
+  .news .table th,
+  .news .table td {
+    border: none;
+    padding: 0;
+  }
+  .news .table th {
+    flex: 0 0 auto;
+    width: auto !important;
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+    white-space: nowrap;
+  }
+  .news .table td {
+    flex: 1 1 260px;
+  }
+
+  .publications {
+    font-size: 0.92rem;
+  }
+  .publications h2 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    opacity: 0.55;
+    margin-top: 2.25rem;
+  }
+  .publications ol.bibliography li {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+  .publications ol.bibliography li:last-child {
+    border-bottom: none;
+  }
+  .publications ol.bibliography li .title {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .publications ol.bibliography li .abbr abbr {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    border-radius: 999px;
+    padding: 0.15rem 0.65rem;
   }
 </style> <p><strong>SMU-NLP</strong>(Sookmyung Women’s University Natural Language Processing Lab)는 자연어처리(NLP)를 중심으로 AI, AI 에이전트, 평가(Evaluation), 리소스(Resource) 구축, 인간 참여형(Human-integrated) AI, 그리고 이를 실제 문제에 적용하는 응용 전략(Application Strategy)까지 폭넓게 연구합니다.</p> <p>우리 연구실은 언어모델이 실제 환경에서 신뢰성 있게 동작하도록 만드는 데 관심이 있으며, 이를 위해 다음과 같은 주제들을 다룹니다:</p> <ul> <li> <strong>Natural Language Processing</strong>: 언어 이해 및 생성 관련 핵심 기술 연구</li> <li> <strong>AI / AI Agent</strong>: 자율적으로 계획하고 행동하는 에이전트 시스템 연구</li> <li> <strong>Evaluation</strong>: 모델과 시스템의 성능을 신뢰성 있게 평가하는 방법론 연구</li> <li> <strong>Resource</strong>: 연구와 응용에 필요한 데이터셋 및 벤치마크 구축</li> <li> <strong>Human-integrated AI</strong>: 사람과 AI가 함께 협업하는 시스템 연구</li> <li> <strong>Application Strategy</strong>: 연구 성과를 실제 문제에 적용하기 위한 전략 연구</li> </ul> <p>Publications는 <a href="https://scholar.google.com/citations?user=queGQ5UAAAAJ&amp;hl=ko" rel="external nofollow noopener" target="_blank">Google Scholar</a> 프로필에서도 확인하실 수 있습니다.</p> </div> <h2> <a href="/news/" style="color: inherit">news</a> </h2> <div class="news"> <div class="table-responsive"> <table class="table table-sm table-borderless"> <tr> <th scope="row" style="width: 20%">Sep 01, 2026</th> <td> 🎉 SMU-NLP(숙명여자대학교 자연어처리 연구실)가 문을 열었습니다! 자연어처리, AI 에이전트, 평가, 리소스 구축, 인간 참여형 AI 등에 관심 있는 학생들의 많은 지원 바랍니다. </td> </tr> </table> </div> </div> <h2> <a href="/publications/" style="color: inherit">selected publications</a> </h2> <div class="publications"> <ol class="bibliography"> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">ACL Findings</abbr> </div> <div id="moon2026needlechain" class="col-sm-8"> <div class="title">NeedleChain: Measuring Intact Context Comprehension Capability of Large Language Models</div> <div class="author"> <em>Hyeonseok Moon</em> and Heuiseok Lim </div> <div class="periodical"> <em>In ACL (Findings)</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">ACL</abbr> </div> <div id="moon2025call" class="col-sm-8"> <div class="title">Call for Rigor in Reporting Quality of Instruction Tuning Data</div> <div class="author"> <em>Hyeonseok Moon</em>, Jaehyung Seo, and Heuiseok Lim </div> <div class="periodical"> <em>In ACL (2)</em>, 2025 </div> <div class="periodical"> </div> <div class="links"> <a href="http://arxiv.org/abs/2503.04807" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">EMNLP</abbr> </div> <div id="moon2025metric" class="col-sm-8"> <div class="title">Metric Calculating Benchmark: Code-Verifiable Complicate Instruction Following Benchmark for Large Language Models</div> <div class="author"> <em>Hyeonseok Moon</em>, Seongtae Hong, Jaehyung Seo, and <span class="more-authors" title="click to view 1 more author" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '1 more author' ? 'Heuiseok Lim' : '1 more author'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">1 more author</span> </div> <div class="periodical"> <em>In EMNLP</em>, 2025 </div> <div class="periodical"> </div> <div class="links"> <a href="http://arxiv.org/abs/2510.07892" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">EMNLP Findings</abbr> </div> <div id="moon2025limacost" class="col-sm-8"> <div class="title">LimaCost: Data Valuation for Instruction Tuning of Large Language Models</div> <div class="author"> <em>Hyeonseok Moon</em>, Jaehyung Seo, Seonmin Koo, and <span class="more-authors" title="click to view 4 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '4 more authors' ? 'Jinsung Kim, Young-kyoung Ham, Jiwon Moon, Heuiseok Lim' : '4 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">4 more authors</span> </div> <div class="periodical"> <em>In EMNLP (Findings)</em>, 2025 </div> <div class="periodical"> </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100">NAACL Findings</abbr> </div> <div id="moon2025find" class="col-sm-8"> <div class="title">Find the Intention of Instruction: Comprehensive Evaluation of Instruction Understanding for Large Language Models</div> <div class="author"> <em>Hyeonseok Moon</em>, Jaehyung Seo, Seungyoon Lee, and <span class="more-authors" title="click to view 2 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '2 more authors' ? 'Chanjun Park, Heuiseok Lim' : '2 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">2 more authors</span> </div> <div class="periodical"> <em>In NAACL (Findings)</em>, 2025 </div> <div class="periodical"> </div> <div class="links"> <a href="http://arxiv.org/abs/2412.19450" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> </div> </div> </div> </li> </ol> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 SMU-NLP . Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
