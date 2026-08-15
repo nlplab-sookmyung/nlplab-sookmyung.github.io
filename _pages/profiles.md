@@ -8,21 +8,64 @@ nav_order: 3
 ---
 
 <style>
+  :root {
+    --global-theme-color: #2c4a6e;
+    --global-hover-color: #3a6089;
+    --global-divider-color: rgba(15, 23, 42, 0.08);
+  }
+  html[data-theme="dark"] {
+    --global-theme-color: #86aed6;
+    --global-hover-color: #a5c4e3;
+    --global-divider-color: #33383f;
+  }
+
+  body {
+    font-weight: 400;
+  }
+
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 0.92rem;
+    letter-spacing: 0.03em;
+    padding-bottom: 0.35rem;
+    border-bottom: 2px solid transparent;
+  }
+  .navbar .navbar-nav .nav-item .nav-link:hover {
+    border-bottom-color: var(--global-divider-color);
+  }
+  .navbar .navbar-nav .nav-item.active > .nav-link {
+    border-bottom-color: var(--global-theme-color);
+  }
+
+  .post-title {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .post-header .desc {
+    font-size: 1.05rem;
+    color: var(--global-text-color-light);
+    margin-top: 0.25rem;
+  }
+
   footer[role="contentinfo"] {
     display: none !important;
   }
+
   .people-pi {
     display: flex;
     gap: 2rem;
     align-items: flex-start;
     flex-wrap: wrap;
     margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--global-divider-color);
   }
   .people-pi img,
   .people-card img {
     width: 100%;
-    max-width: 220px;
-    border-radius: 8px;
+    max-width: 180px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
   }
   .people-pi .people-info {
     flex: 1;
@@ -31,7 +74,7 @@ nav_order: 3
   .people-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
   }
   @media (max-width: 768px) {
     .people-grid {
@@ -40,13 +83,28 @@ nav_order: 3
   }
   .people-card {
     text-align: center;
+    padding: 1.75rem 1.25rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 14px;
+    transition:
+      border-color 0.2s ease,
+      transform 0.2s ease;
+  }
+  .people-card:hover {
+    border-color: var(--global-theme-color);
+    transform: translateY(-2px);
+  }
+  .people-card img {
+    max-width: 140px;
+    margin: 0 auto;
   }
   .people-card .people-info {
-    margin-top: 0.75rem;
+    margin-top: 1rem;
   }
   .people-role {
-    opacity: 0.7;
-    font-size: 0.9rem;
+    opacity: 0.65;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
     margin-bottom: 0.5rem;
   }
   .people-links a {
