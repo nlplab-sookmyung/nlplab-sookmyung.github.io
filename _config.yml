@@ -229,6 +229,8 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
+  - _posts/
+  - _pages/blog.md
   - AGENTS.md
   - al-folio-upgrade-report.md
   - bin/
@@ -355,8 +357,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [LastName] # TODO: 지도교수님 성함으로 교체
-  first_name: [FirstName]
+  last_name: [Moon]
+  first_name: [Hyeonseok, H.]
 
   style: apa
   locale: en

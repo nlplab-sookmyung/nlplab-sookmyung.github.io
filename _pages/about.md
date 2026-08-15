@@ -19,11 +19,6 @@ announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 
 **SMU-NLP**(Sookmyung Women's University Natural Language Processing Lab)는 자연어처리(NLP)를 중심으로 AI, AI 에이전트, 평가(Evaluation), 리소스(Resource) 구축, 인간 참여형(Human-integrated) AI, 그리고 이를 실제 문제에 적용하는 응용 전략(Application Strategy)까지 폭넓게 연구합니다.
