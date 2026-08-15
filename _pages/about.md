@@ -67,15 +67,16 @@ announcements:
     color: rgba(255, 255, 255, 0.88);
     margin-top: 0.5rem;
   }
+  .post-header .desc::after {
+    content: "숙명여대 자연어처리연구실";
+    display: block;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.65);
+    margin-top: 0.4rem;
+  }
 
   footer[role="contentinfo"] {
     display: none !important;
-  }
-
-  .intro-block + .intro-divider {
-    border: none;
-    border-top: 1px solid var(--global-divider-color);
-    margin: 2.25rem 0;
   }
 
   /* Reflow article children (contact goes after news/publications without
@@ -235,19 +236,7 @@ announcements:
 
 <div class="intro-block" markdown="1">
 
-SMU-NLP(숙명여자대학교 자연어처리 연구실)는 자연어처리(NLP)를 중심축으로 AI 에이전트, 평가(Evaluation), 리소스 구축, 인간 참여형(Human-integrated) AI, 응용 전략(Application Strategy)까지 연구 영역을 넓혀가고 있습니다.
-
-저희는 아직 누구도 제대로 풀지 못한 도전적인 문제를 발굴하고, 자연어처리 연구의 프론티어를 넓히는 데 목표를 둡니다. 언어 이해·생성의 핵심 기술을 다지는 동시에 스스로 계획하고 행동하는 에이전트를 설계하고, 모델과 시스템의 성능을 신뢰성 있게 재는 평가 방법론을 세웁니다. 필요한 데이터셋과 벤치마크는 직접 구축하고, 사람과 AI가 함께 일하는 구조를 실험하며, 연구 결과를 실제 문제로 옮기는 전략까지 고민합니다.
-
-논문 목록은 [Google Scholar](https://scholar.google.com/citations?user=queGQ5UAAAAJ&hl=ko) 프로필에서도 보실 수 있습니다.
-
-</div>
-
-<hr class="intro-divider" />
-
-<div class="intro-block" markdown="1">
-
-SMU-NLP — the Natural Language Processing Lab at Sookmyung Women's University — works outward from language understanding and generation, into AI agents, evaluation, resource building, human-integrated AI, and turning research results into real applications.
+SMU-NLP is the Natural Language Processing Lab at Sookmyung Women's University. We work outward from language understanding and generation into AI agents, evaluation, resource building, human-integrated AI, and turning research results into real applications.
 
 Our goal is to find problems nobody has properly solved yet and push the frontier of NLP research forward. We build the core techniques behind understanding and generating language, design agents that plan and act on their own, and work out evaluation methods we can actually trust. We build our own datasets and benchmarks, explore how people and AI can work side by side, and carry what we learn into real applications.
 
