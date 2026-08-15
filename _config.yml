@@ -2,8 +2,8 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: SMU-NLP # the website title (if blank, full name will be used instead)
-first_name: SMU-NLP
+title: SMU-NLP Lab # the website title (if blank, full name will be used instead)
+first_name: SMU-NLP Lab
 middle_name:
 last_name:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -100,7 +100,7 @@ posts_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 1100px
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org

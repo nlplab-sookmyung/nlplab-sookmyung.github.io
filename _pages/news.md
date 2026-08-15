@@ -22,9 +22,13 @@ nav_order: 1
     font-weight: 400;
   }
 
+  .navbar .navbar-nav .nav-item {
+    margin: 0 0.4rem;
+  }
   .navbar .navbar-nav .nav-item .nav-link {
-    font-size: 0.92rem;
-    letter-spacing: 0.03em;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     padding-bottom: 0.35rem;
     border-bottom: 2px solid transparent;
   }

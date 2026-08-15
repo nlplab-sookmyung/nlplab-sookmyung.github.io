@@ -4,14 +4,6 @@ title: about
 permalink: /
 subtitle: Sookmyung Women's University Natural Language Processing Lab
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>TODO: 사무실 위치</p>
-    <p>Sookmyung Women's University</p>
-
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
@@ -37,9 +29,13 @@ announcements:
     font-weight: 400;
   }
 
+  .navbar .navbar-nav .nav-item {
+    margin: 0 0.4rem;
+  }
   .navbar .navbar-nav .nav-item .nav-link {
-    font-size: 0.92rem;
-    letter-spacing: 0.03em;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     padding-bottom: 0.35rem;
     border-bottom: 2px solid transparent;
   }
@@ -51,13 +47,15 @@ announcements:
   }
 
   .post-title {
-    font-weight: 700;
-    letter-spacing: -0.01em;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    font-size: clamp(2.75rem, 6vw, 4rem);
+    line-height: 1.05;
   }
   .post-header .desc {
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     color: var(--global-text-color-light);
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
   }
 
   footer[role="contentinfo"] {
@@ -126,6 +124,22 @@ announcements:
     border-radius: 999px;
     padding: 0.15rem 0.65rem;
   }
+
+  .lab-contact {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--global-divider-color);
+  }
+  .lab-contact h2 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    opacity: 0.55;
+    margin-bottom: 0.75rem;
+  }
+  .lab-contact a {
+    font-weight: 600;
+  }
 </style>
 
 **SMU-NLP**(Sookmyung Women's University Natural Language Processing Lab)는 자연어처리(NLP)를 중심으로 AI, AI 에이전트, 평가(Evaluation), 리소스(Resource) 구축, 인간 참여형(Human-integrated) AI, 그리고 이를 실제 문제에 적용하는 응용 전략(Application Strategy)까지 폭넓게 연구합니다.
@@ -140,3 +154,13 @@ announcements:
 - **Application Strategy**: 연구 성과를 실제 문제에 적용하기 위한 전략 연구
 
 Publications는 [Google Scholar](https://scholar.google.com/citations?user=queGQ5UAAAAJ&hl=ko) 프로필에서도 확인하실 수 있습니다.
+
+<div class="lab-contact" markdown="1">
+
+## contact
+
+연구실 참여, 협업 문의는 아래 이메일로 연락해주세요.
+
+[hyns.moon@sookmyung.ac.kr](mailto:hyns.moon@sookmyung.ac.kr)
+
+</div>
