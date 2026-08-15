@@ -84,6 +84,17 @@ nav_order: 2
     border-radius: 999px;
     padding: 0.15rem 0.65rem;
   }
+  .publications ol.bibliography li .abbr:has(img.preview) abbr {
+    display: none;
+  }
+  .publications ol.bibliography li .abbr img.preview {
+    width: 100%;
+    height: auto;
+    max-height: 56px;
+    object-fit: contain;
+    box-shadow: none;
+    cursor: default;
+  }
 </style>
 
 <!-- Bibsearch Feature -->
