@@ -72,15 +72,6 @@ announcements:
     display: none !important;
   }
 
-  /* Bilingual intro blocks */
-  .intro-lang-label {
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    opacity: 0.5;
-    margin-bottom: 0.6rem;
-  }
   .intro-block + .intro-divider {
     border: none;
     border-top: 1px solid var(--global-divider-color);
@@ -203,20 +194,11 @@ announcements:
 
 <div class="intro-block" markdown="1">
 
-<p class="intro-lang-label">한국어</p>
+SMU-NLP(숙명여자대학교 자연어처리 연구실)는 언어를 이해하고 생성하는 자연어처리(NLP) 기술을 중심축으로 삼습니다. 여기서 출발해 AI 에이전트, 평가(Evaluation), 리소스 구축, 인간 참여형(Human-integrated) AI, 그리고 연구 성과를 실제 문제로 옮기는 응용 전략까지 연구 범위를 넓혀가고 있습니다.
 
-**SMU-NLP**(Sookmyung Women's University Natural Language Processing Lab)는 자연어처리(NLP)를 중심으로 AI, AI 에이전트, 평가(Evaluation), 리소스(Resource) 구축, 인간 참여형(Human-integrated) AI, 그리고 이를 실제 문제에 적용하는 응용 전략(Application Strategy)까지 폭넓게 연구합니다.
+저희가 궁금해하는 질문은 결국 하나입니다. 언어모델이 실험실 밖, 그러니까 실제 환경에서도 믿을 만하게 작동하려면 무엇이 필요한가. 이 질문에 답하기 위해 언어 이해·생성의 핵심 기술을 다지는 한편, 스스로 계획하고 행동하는 에이전트 시스템을 설계하고, 모델과 시스템의 성능을 신뢰성 있게 재는 평가 방법론을 고민합니다. 여기에 더해 연구와 응용에 필요한 데이터셋·벤치마크를 직접 만들고, 사람과 AI가 함께 일하는 협업 구조를 실험하며, 그렇게 쌓은 결과를 실제 문제에 적용할 전략까지 함께 짭니다.
 
-우리 연구실은 언어모델이 실제 환경에서 신뢰성 있게 동작하도록 만드는 데 관심이 있으며, 이를 위해 다음과 같은 주제들을 다룹니다:
-
-- **Natural Language Processing**: 언어 이해 및 생성 관련 핵심 기술 연구
-- **AI / AI Agent**: 자율적으로 계획하고 행동하는 에이전트 시스템 연구
-- **Evaluation**: 모델과 시스템의 성능을 신뢰성 있게 평가하는 방법론 연구
-- **Resource**: 연구와 응용에 필요한 데이터셋 및 벤치마크 구축
-- **Human-integrated AI**: 사람과 AI가 함께 협업하는 시스템 연구
-- **Application Strategy**: 연구 성과를 실제 문제에 적용하기 위한 전략 연구
-
-Publications는 [Google Scholar](https://scholar.google.com/citations?user=queGQ5UAAAAJ&hl=ko) 프로필에서도 확인하실 수 있습니다.
+논문 목록은 [Google Scholar](https://scholar.google.com/citations?user=queGQ5UAAAAJ&hl=ko) 프로필에서도 보실 수 있습니다.
 
 </div>
 
@@ -224,20 +206,11 @@ Publications는 [Google Scholar](https://scholar.google.com/citations?user=queGQ
 
 <div class="intro-block" markdown="1">
 
-<p class="intro-lang-label">English</p>
+SMU-NLP — the Natural Language Processing Lab at Sookmyung Women's University — works outward from language understanding and generation, into AI agents, evaluation, resource building, human-integrated AI, and the harder question of how any of it holds up once it leaves the lab.
 
-**SMU-NLP** (Sookmyung Women's University Natural Language Processing Lab) conducts broad research centered on natural language processing (NLP), spanning AI, AI agents, evaluation, resource construction, human-integrated AI, and application strategies for real-world problems.
+That's really the question driving us: what does it take for a language model to behave reliably outside a controlled setting? We chase it from several directions at once. We build the core techniques behind understanding and generating language, design agents that plan and act on their own, and work out evaluation methods that measure model and system performance in ways we can actually trust. We also build the datasets and benchmarks our own research depends on, explore how people and AI can work side by side, and figure out how to carry what we learn into real applications.
 
-We are interested in making language models work reliably in real-world settings, and our work spans the following areas:
-
-- **Natural Language Processing**: core technologies for language understanding and generation
-- **AI / AI Agent**: autonomous agent systems that plan and act
-- **Evaluation**: methodologies for reliably evaluating models and systems
-- **Resource**: building datasets and benchmarks for research and applications
-- **Human-integrated AI**: systems where humans and AI collaborate
-- **Application Strategy**: strategies for applying research outcomes to real-world problems
-
-Publications are also available on our [Google Scholar](https://scholar.google.com/citations?user=queGQ5UAAAAJ&hl=ko) profile.
+Our publications are also listed on our [Google Scholar](https://scholar.google.com/citations?user=queGQ5UAAAAJ&hl=ko) profile.
 
 </div>
 
