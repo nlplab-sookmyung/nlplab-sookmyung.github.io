@@ -6,8 +6,6 @@ title: SMU-NLP # the website title (if blank, full name will be used instead)
 first_name: SMU-NLP
 middle_name:
 last_name:
-contact_note: >
-  이메일로 연락 주시면 가장 빠르게 확인합니다.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Sookmyung Women's University Natural Language Processing Lab. We study NLP, AI, AI agents, evaluation, resources, human-integrated AI, and application strategy.
 footer_text: >

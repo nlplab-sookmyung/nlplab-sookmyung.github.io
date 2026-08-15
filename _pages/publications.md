@@ -9,6 +9,20 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
+<style>
+  footer[role="contentinfo"] {
+    display: none !important;
+  }
+  .publications {
+    font-size: 0.92rem;
+  }
+  .publications h2 {
+    font-size: 1.1rem;
+    opacity: 0.7;
+    margin-top: 2rem;
+  }
+</style>
+
 <!-- Bibsearch Feature -->
 
 {% include bib_search.liquid %}
