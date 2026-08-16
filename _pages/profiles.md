@@ -125,6 +125,7 @@ nav_order: 3
   }
   .people-links a {
     margin: 0 0.4rem;
+    font-size: 1.4rem;
   }
   .people-empty {
     text-align: center;
