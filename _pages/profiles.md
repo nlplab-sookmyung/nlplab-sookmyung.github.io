@@ -59,8 +59,8 @@ nav_order: 3
   }
   .people-pi img {
     width: 100%;
-    max-width: 300px;
-    aspect-ratio: 1 / 1.3;
+    max-width: 260px;
+    aspect-ratio: 3 / 4;
     object-fit: cover;
     border-radius: 20px;
   }
