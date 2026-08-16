@@ -238,9 +238,7 @@ announcements:
 
 SMU-NLP is the Natural Language Processing Lab at Sookmyung Women's University. We work outward from language understanding and generation into AI agents, evaluation, resource building, human-integrated AI, and turning research results into real applications.
 
-Our goal is to find problems nobody has properly solved yet and push the frontier of NLP research forward. We build the core techniques behind understanding and generating language, design agents that plan and act on their own, and work out evaluation methods we can actually trust. We build our own datasets and benchmarks, explore how people and AI can work side by side, and carry what we learn into real applications.
-
-Our publications are also listed on our [Google Scholar](https://scholar.google.com/citations?user=queGQ5UAAAAJ&hl=ko) profile.
+Our goal is to find problems nobody has properly solved yet and push the frontier of NLP research forward. We build the core techniques behind understanding and generating language, design agents that plan and act on their own, and work out evaluation methods we can actually trust. We explore how people and AI can work side by side, and carry what we learn into real applications.
 
 </div>
 
@@ -248,7 +246,7 @@ Our publications are also listed on our [Google Scholar](https://scholar.google.
 
 ## contact
 
-연구실 참여, 협업 문의는 아래 이메일로 연락해주세요.
+연구실 참여, 협업 등 문의는 아래 이메일로 연락주시기 바랍니다.
 
 [hyns.moon@sookmyung.ac.kr](mailto:hyns.moon@sookmyung.ac.kr)
 
