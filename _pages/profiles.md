@@ -57,7 +57,13 @@ nav_order: 3
     padding-bottom: 2.5rem;
     border-bottom: 1px solid var(--global-divider-color);
   }
-  .people-pi img,
+  .people-pi img {
+    width: 100%;
+    max-width: 260px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 20px;
+  }
   .people-card img {
     width: 100%;
     max-width: 180px;
@@ -99,6 +105,12 @@ nav_order: 3
   .people-card .people-info {
     margin-top: 1rem;
   }
+  .people-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.35rem;
+  }
   .people-role {
     opacity: 0.65;
     font-size: 0.85rem;
@@ -129,6 +141,7 @@ nav_order: 3
     {% include figure.liquid loading="eager" path=pi_image_path class="img-fluid z-depth-1 rounded" alt=pi.name cache_bust=true %}
   {% endif %}
   <div class="people-info">
+    {% if pi.title %}<p class="people-title">{{ pi.title }}</p>{% endif %}
     <h2>{{ pi.name }}</h2>
     {% if pi.role %}<p class="people-role">{{ pi.role }}</p>{% endif %}
     {% if pi.address %}<p class="people-address">{{ pi.address }}</p>{% endif %}
