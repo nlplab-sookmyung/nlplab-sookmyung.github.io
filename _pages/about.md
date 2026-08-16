@@ -204,16 +204,44 @@ announcements:
     border-radius: 999px;
     padding: 0.15rem 0.65rem;
   }
-  .publications ol.bibliography li .abbr:has(img.preview) abbr {
-    display: none;
+  .publications ol.bibliography li .row {
+    display: grid;
+    grid-template-columns: minmax(90px, 16%) 1fr;
+    column-gap: 1.5rem;
+    row-gap: 0.35rem;
+    align-items: start;
+    grid-template-areas:
+      "abbr title"
+      "abbr author"
+      "links period1"
+      "links period2";
   }
-  .publications ol.bibliography li .abbr img.preview {
-    width: 100%;
-    height: auto;
-    max-height: 56px;
-    object-fit: contain;
-    box-shadow: none;
-    cursor: default;
+  .publications ol.bibliography li .row > .col-sm-2.abbr {
+    grid-area: abbr;
+  }
+  .publications ol.bibliography li .row > .col-sm-8 {
+    display: contents;
+  }
+  .publications ol.bibliography li .title {
+    grid-area: title;
+  }
+  .publications ol.bibliography li .author {
+    grid-area: author;
+  }
+  .publications ol.bibliography li .author > em {
+    border-bottom: none;
+  }
+  .publications ol.bibliography li .periodical {
+    grid-area: period1;
+    font-weight: 600;
+    color: var(--global-text-color);
+  }
+  .publications ol.bibliography li .periodical + .periodical {
+    grid-area: period2;
+  }
+  .publications ol.bibliography li .links {
+    grid-area: links;
+    align-self: start;
   }
 
   .lab-contact {
