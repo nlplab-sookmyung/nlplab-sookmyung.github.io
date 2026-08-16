@@ -2,15 +2,12 @@
 # Any field can be left blank/omitted — the page only shows what's filled in.
 
 pi:
-  name: Hyeonseok Moon
-  role: Assistant Professor / Lab Director
-  photo: prof_pic.jpg # TODO: 실제 프로필 사진으로 교체
-  bio: > # TODO: 실제 소개글로 교체
-    자연어처리(NLP), AI 에이전트, 평가, 리소스 구축을 연구합니다. SMU-NLP(Sookmyung Women's
-    University Natural Language Processing Lab)를 이끌고 있습니다.
-  email: # TODO: 실제 이메일 주소 입력 (_data/socials.yml의 email과 동일하게 맞추는 것을 권장)
-  homepage: # TODO: 개인 홈페이지가 있다면 URL 입력
-  scholar: https://scholar.google.com/citations?user=queGQ5UAAAAJ&hl=ko
+  name: Hyeonseok Moon (문현석)
+  role: Assistant Professor, Sookmyung Women's University
+  photo: moon2.JPG
+  email: hyns.moon@sookmyung.ac.kr
+  linkedin: https://www.linkedin.com/in/hyeonseok-moon-nlp
+  scholar: https://scholar.google.com/citations?hl=ko&user=queGQ5UAAAAJ&view_op=list_works&sortby=pubdate
 
 # 아직 합류한 학생이 없어 비워둡니다. 아래 형식대로 추가하면 3열 그리드에 표시됩니다:
 # students:

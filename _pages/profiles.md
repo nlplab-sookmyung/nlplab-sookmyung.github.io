@@ -132,10 +132,11 @@ nav_order: 3
     <h2>{{ pi.name }}</h2>
     {% if pi.role %}<p class="people-role">{{ pi.role }}</p>{% endif %}
     {% if pi.bio %}<p>{{ pi.bio }}</p>{% endif %}
-    {% if pi.email or pi.homepage or pi.scholar %}
+    {% if pi.email or pi.homepage or pi.linkedin or pi.scholar %}
       <p class="people-links">
         {% if pi.email %}<a href="mailto:{{ pi.email }}" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
         {% if pi.homepage %}<a href="{{ pi.homepage }}" target="_blank" rel="noopener" title="Homepage"><i class="fa-solid fa-globe"></i></a>{% endif %}
+        {% if pi.linkedin %}<a href="{{ pi.linkedin }}" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>{% endif %}
         {% if pi.scholar %}<a href="{{ pi.scholar }}" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
       </p>
     {% endif %}
