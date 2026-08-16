@@ -53,10 +53,11 @@ nav_order: 2
     font-size: 0.92rem;
   }
   .publications h2 {
-    font-size: 1.05rem;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    opacity: 0.55;
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: var(--global-text-color);
+    opacity: 1;
     margin-top: 2.25rem;
     padding-top: 1.75rem;
     border-top: 1px solid var(--global-divider-color);
@@ -91,7 +92,7 @@ nav_order: 2
   }
   .publications ol.bibliography li .row {
     display: grid;
-    grid-template-columns: minmax(100px, 16%) 1fr;
+    grid-template-columns: minmax(78px, 10%) 1fr;
     column-gap: 1.5rem;
     row-gap: 0.15rem;
     align-items: start;
