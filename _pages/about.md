@@ -178,17 +178,18 @@ announcements:
   .publications {
     font-size: 0.92rem;
   }
-  .publications h2 {
+  div.publications h2.bibliography {
     font-size: 1.4rem;
     font-weight: 800;
     letter-spacing: 0.02em;
     color: var(--global-text-color);
     opacity: 1;
+    text-align: left;
     margin-top: 2.25rem;
     padding-top: 1.75rem;
     border-top: 1px solid var(--global-divider-color);
   }
-  .publications h2:first-of-type {
+  div.publications h2.bibliography:first-of-type {
     margin-top: 0;
     padding-top: 0;
     border-top: none;
