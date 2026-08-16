@@ -13,11 +13,13 @@ nav_order: 2
     --global-theme-color: #2c4a6e;
     --global-hover-color: #3a6089;
     --global-divider-color: rgba(15, 23, 42, 0.08);
+    --global-badge-color: #6a90bd;
   }
   html[data-theme="dark"] {
     --global-theme-color: #86aed6;
     --global-hover-color: #a5c4e3;
     --global-divider-color: #33383f;
+    --global-badge-color: #4a72a0;
   }
 
   body {
@@ -61,7 +63,7 @@ nav_order: 2
     letter-spacing: 0.05em;
     color: #fff;
     opacity: 1;
-    text-align: left;
+    text-align: right;
     background: var(--global-theme-color);
     border-radius: 6px;
     padding: 0.55rem 1rem;
@@ -94,6 +96,7 @@ nav_order: 2
     margin-bottom: 0;
     white-space: normal;
     text-align: center;
+    background-color: var(--global-badge-color) !important;
   }
   .publications ol.bibliography li .row {
     display: grid;
