@@ -51,6 +51,22 @@ nav_order: 2
     border-bottom-color: var(--global-theme-color);
   }
 
+  .navbar-brand.title {
+    font-size: 0;
+    display: inline-flex;
+    align-items: center;
+  }
+  .navbar-brand.title::before {
+    content: "";
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background-image: url("{{ '/assets/img/icon/smu_nlp_combined_snowflake.svg' | relative_url }}");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
   .post-header {
     display: none;
   }

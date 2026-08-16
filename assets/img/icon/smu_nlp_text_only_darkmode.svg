@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="100%" height="100%">
+  <!-- Main Title White -->
+  <text x="0" y="68" 
+        font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" 
+        font-size="52" 
+        font-weight="800" 
+        letter-spacing="-0.02em" 
+        fill="#FFFFFF">
+    SMU NLP <tspan font-weight="500" fill="#94A3B8" font-size="38">LAB</tspan>
+  </text>
+  
+  <!-- Subtitle Light Accent -->
+  <text x="2" y="104" 
+        font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" 
+        font-size="14" 
+        font-weight="600" 
+        letter-spacing="0.22em" 
+        fill="#38BDF8">
+    LANGUAGE &amp; INTELLIGENCE RESEARCH
+  </text>
+</svg>

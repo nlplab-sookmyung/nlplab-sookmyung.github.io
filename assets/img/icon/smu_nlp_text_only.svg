@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 95" width="100%" height="100%">
+  <!-- Main Title -->
+  <text x="0" y="52" 
+        font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" 
+        font-size="48" 
+        font-weight="800" 
+        letter-spacing="-0.02em" 
+        fill="#002B66">
+    SMU NLP <tspan font-weight="500" fill="#64748B" font-size="34">LAB</tspan>
+  </text>
+  
+  <!-- Subtitle with Tight Vertical Gap: y=76 -->
+  <text x="2" y="76" 
+        font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" 
+        font-size="13.5" 
+        font-weight="600" 
+        letter-spacing="0.14em" 
+        fill="#475569">
+    LANGUAGE INTELLIGENCE RESEARCH
+  </text>
+</svg>

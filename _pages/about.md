@@ -80,7 +80,7 @@ announcements:
   .post-header .desc::after {
     content: "숙명여자대학교 자연어처리연구실";
     display: block;
-    font-size: 0.85rem;
+    font-size: 1.15rem;
     color: rgba(255, 255, 255, 0.65);
     margin-top: 0.4rem;
   }
