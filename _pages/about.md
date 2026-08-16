@@ -235,6 +235,7 @@ announcements:
     max-width: none;
     flex: none;
     padding: 0;
+    margin-bottom: 0;
   }
   .publications ol.bibliography li .row > .col-sm-8 {
     display: contents;
