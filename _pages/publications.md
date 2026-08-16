@@ -85,8 +85,10 @@ nav_order: 2
     display: grid;
     grid-template-columns: minmax(100px, 16%) 1fr;
     column-gap: 1.5rem;
-    row-gap: 0.35rem;
+    row-gap: 0.2rem;
     align-items: start;
+    margin-left: 0;
+    margin-right: 0;
     grid-template-areas:
       "abbr title"
       "links author"
@@ -95,6 +97,9 @@ nav_order: 2
   }
   .publications ol.bibliography li .row > .col-sm-2.abbr {
     grid-area: abbr;
+    width: auto;
+    max-width: none;
+    flex: none;
   }
   .publications ol.bibliography li .row > .col-sm-8 {
     display: contents;
