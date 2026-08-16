@@ -19,12 +19,18 @@ announcements:
     --global-hover-color: #3a6089;
     --global-divider-color: rgba(15, 23, 42, 0.08);
     --global-badge-color: #6a90bd;
+    --global-badge-conference-color: #6a90bd;
+    --global-badge-journal-color: #4f9e8b;
+    --global-badge-arxiv-color: #c17a4a;
   }
   html[data-theme="dark"] {
     --global-theme-color: #86aed6;
     --global-hover-color: #a5c4e3;
     --global-divider-color: #33383f;
     --global-badge-color: #4a72a0;
+    --global-badge-conference-color: #4a72a0;
+    --global-badge-journal-color: #3c7d6d;
+    --global-badge-arxiv-color: #a3623a;
   }
 
   body {
@@ -222,7 +228,7 @@ announcements:
     margin-bottom: 0;
     white-space: normal;
     text-align: center;
-    background-color: var(--global-badge-color) !important;
+    background-color: var(--global-badge-color);
   }
   .publications ol.bibliography li .row {
     display: grid;
@@ -254,15 +260,17 @@ announcements:
   }
   .publications ol.bibliography li .author {
     grid-area: author;
+    padding-left: 0.35rem;
   }
   .publications ol.bibliography li .author > em {
     border-bottom: none;
   }
   .publications ol.bibliography li .periodical {
     grid-area: period1;
+    padding-left: 0.35rem;
     font-size: 0.98rem;
-    font-weight: 700;
-    color: var(--global-text-color);
+    font-weight: 600;
+    color: var(--global-text-color-light);
   }
   .publications ol.bibliography li .periodical + .periodical {
     grid-area: period2;

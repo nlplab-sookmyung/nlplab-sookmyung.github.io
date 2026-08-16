@@ -1,9 +1,49 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# Badge background color per publication venue abbreviation (matches the
+# `abbr` field in _bibliography/papers.bib). Read by the gem's bib.liquid
+# template (site.data.venues[entry.abbr].color). Journal / conference / arXiv
+# each get their own color, defined in _pages/about.md and publications.md.
 
-"PhysRev":
-  url: https://journals.aps.org/
+"ACL":
+  color: "var(--global-badge-conference-color)"
+"ACL Findings":
+  color: "var(--global-badge-conference-color)"
+"ACL Demo":
+  color: "var(--global-badge-conference-color)"
+"COLING":
+  color: "var(--global-badge-conference-color)"
+"EACL Findings":
+  color: "var(--global-badge-conference-color)"
+"EMNLP":
+  color: "var(--global-badge-conference-color)"
+"EMNLP Findings":
+  color: "var(--global-badge-conference-color)"
+"ICLR":
+  color: "var(--global-badge-conference-color)"
+"IJCNLP-AACL":
+  color: "var(--global-badge-conference-color)"
+"IWSLT":
+  color: "var(--global-badge-conference-color)"
+"LREC":
+  color: "var(--global-badge-conference-color)"
+"LREC-COLING":
+  color: "var(--global-badge-conference-color)"
+"NAACL Findings":
+  color: "var(--global-badge-conference-color)"
+"NAACL Industry":
+  color: "var(--global-badge-conference-color)"
+"SIGIR":
+  color: "var(--global-badge-conference-color)"
 
-"Vision":
-  color: "#009f36"
+"Appl. Sci.":
+  color: "var(--global-badge-journal-color)"
+"ESWA":
+  color: "var(--global-badge-journal-color)"
+"IEEE":
+  color: "var(--global-badge-journal-color)"
+"KBS":
+  color: "var(--global-badge-journal-color)"
+"Mathematics":
+  color: "var(--global-badge-journal-color)"
+
+"arXiv":
+  color: "var(--global-badge-arxiv-color)"
