@@ -262,22 +262,20 @@ announcements:
   }
   .publications ol.bibliography li .author {
     grid-area: author;
-    padding-left: 0.9rem;
   }
   .publications ol.bibliography li .author > em {
     border-bottom: none;
   }
   .publications ol.bibliography li .periodical {
     grid-area: period1;
-    padding-left: 0.9rem;
-    font-size: 0.98rem;
-    font-weight: 600;
+    font-size: 0.85rem;
+    font-weight: 400;
     color: var(--global-periodical-color);
-    font-family: "Roboto Slab", serif;
+    font-family: "Times New Roman", Times, serif;
   }
   .publications ol.bibliography li .periodical em {
     color: var(--global-periodical-color);
-    font-family: "Roboto Slab", serif;
+    font-family: "Times New Roman", Times, serif;
   }
   .publications ol.bibliography li .periodical + .periodical {
     grid-area: period2;
