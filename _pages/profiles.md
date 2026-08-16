@@ -40,14 +40,8 @@ nav_order: 3
     border-bottom-color: var(--global-theme-color);
   }
 
-  .post-title {
-    font-weight: 700;
-    letter-spacing: -0.01em;
-  }
-  .post-header .desc {
-    font-size: 1.05rem;
-    color: var(--global-text-color-light);
-    margin-top: 0.25rem;
+  .post-header {
+    display: none;
   }
 
   footer[role="contentinfo"] {
