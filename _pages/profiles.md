@@ -104,6 +104,12 @@ nav_order: 3
     font-size: 0.85rem;
     letter-spacing: 0.02em;
     margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  .people-address {
+    opacity: 0.55;
+    font-size: 0.82rem;
+    margin-bottom: 0.75rem;
   }
   .people-links a {
     margin: 0 0.4rem;
@@ -125,6 +131,7 @@ nav_order: 3
   <div class="people-info">
     <h2>{{ pi.name }}</h2>
     {% if pi.role %}<p class="people-role">{{ pi.role }}</p>{% endif %}
+    {% if pi.address %}<p class="people-address">{{ pi.address }}</p>{% endif %}
     {% if pi.bio %}<p>{{ pi.bio }}</p>{% endif %}
     {% if pi.email or pi.homepage or pi.linkedin or pi.scholar %}
       <p class="people-links">
