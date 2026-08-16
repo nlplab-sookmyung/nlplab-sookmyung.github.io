@@ -59,8 +59,8 @@ nav_order: 2
   .navbar-brand.title::before {
     content: "";
     display: inline-block;
-    width: 38px;
-    height: 38px;
+    width: 210px;
+    height: 46px;
     background-image: url("{{ '/assets/img/icon/smu_nlp_combined_snowflake.svg' | relative_url }}");
     background-size: contain;
     background-repeat: no-repeat;
