@@ -72,21 +72,24 @@ nav_order: 2
     font-weight: 600;
   }
   .publications ol.bibliography li .abbr abbr {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     font-weight: 600;
-    letter-spacing: 0.02em;
-    border-radius: 999px;
-    padding: 0.15rem 0.65rem;
+    letter-spacing: 0.01em;
+    line-height: 1.25;
+    border-radius: 6px;
+    padding: 0.3rem 0.4rem;
+    white-space: normal;
+    text-align: center;
   }
   .publications ol.bibliography li .row {
     display: grid;
-    grid-template-columns: minmax(90px, 16%) 1fr;
+    grid-template-columns: minmax(100px, 16%) 1fr;
     column-gap: 1.5rem;
     row-gap: 0.35rem;
     align-items: start;
     grid-template-areas:
       "abbr title"
-      "abbr author"
+      "links author"
       "links period1"
       "links period2";
   }
