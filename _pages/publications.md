@@ -85,6 +85,7 @@ nav_order: 2
     line-height: 1.25;
     border-radius: 6px;
     padding: 0.2rem 0.4rem;
+    margin-bottom: 0;
     white-space: normal;
     text-align: center;
   }
