@@ -139,6 +139,12 @@ nav_order: 3
     font-size: 0.82rem;
     margin-bottom: 0.75rem;
   }
+  .people-bio {
+    opacity: 0.55;
+    font-size: 0.78rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
   .people-links a {
     margin: 0 0.4rem;
     font-size: 1.4rem;
@@ -162,7 +168,7 @@ nav_order: 3
     <h2>{{ pi.name }}</h2>
     {% if pi.role %}<p class="people-role">{{ pi.role }}</p>{% endif %}
     {% if pi.address %}<p class="people-address">{{ pi.address }}</p>{% endif %}
-    {% if pi.bio %}<p>{{ pi.bio }}</p>{% endif %}
+    {% if pi.bio %}<p class="people-bio">{{ pi.bio }}</p>{% endif %}
     {% if pi.email or pi.homepage or pi.linkedin or pi.scholar %}
       <p class="people-links">
         {% if pi.email %}<a href="mailto:{{ pi.email }}" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
@@ -190,7 +196,7 @@ nav_order: 3
         <div class="people-info">
           <h3>{{ s.name }}</h3>
           {% if s.role %}<p class="people-role">{{ s.role }}</p>{% endif %}
-          {% if s.bio %}<p>{{ s.bio }}</p>{% endif %}
+          {% if s.bio %}<p class="people-bio">{{ s.bio }}</p>{% endif %}
           {% if s.email or s.homepage or s.scholar %}
             <p class="people-links">
               {% if s.email %}<a href="mailto:{{ s.email }}" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
