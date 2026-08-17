@@ -10,6 +10,10 @@ pi:
   email: hyns.moon@sookmyung.ac.kr
   linkedin: https://www.linkedin.com/in/hyeonseok-moon-nlp
   scholar: https://scholar.google.com/citations?hl=ko&user=queGQ5UAAAAJ&view_op=list_works&sortby=pubdate
+  bio:  >-
+    Ph.D. in Computer Science, Korea University <br>
+    M.S. in Computer Science, Korea University <br>
+    B.S. in Mathematics, Korea University
 
 # 아직 합류한 학생이 없어 비워둡니다. 아래 형식대로 추가하면 3열 그리드에 표시됩니다:
 # students:
