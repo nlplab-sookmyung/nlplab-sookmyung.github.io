@@ -11,9 +11,9 @@ pi:
   linkedin: https://www.linkedin.com/in/hyeonseok-moon-nlp
   scholar: https://scholar.google.com/citations?hl=ko&user=queGQ5UAAAAJ&view_op=list_works&sortby=pubdate
   bio:  >-
-    Ph.D. in Computer Science and Engineering, Korea University (Seoul) <br>
-    M.S. in Computer Scienceand Engineering, Korea University (Seoul) <br>
-    B.S. in Mathematics, Korea University (Seoul)
+    - Ph.D. in Computer Science and Engineering, Korea University (Seoul) <br>
+    - M.S. in Computer Scienceand Engineering, Korea University (Seoul) <br>
+    - B.S. in Mathematics, Korea University (Seoul)
 
 # 아직 합류한 학생이 없어 비워둡니다. 아래 형식대로 추가하면 3열 그리드에 표시됩니다:
 # students:
