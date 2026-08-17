@@ -209,5 +209,5 @@ nav_order: 3
     {% endfor %}
   </div>
 {% else %}
-  <p class="people-empty">아직 합류한 학생이 없습니다. 곧 업데이트될 예정입니다.</p>
+  <p class="people-empty">-</p>
 {% endif %}
