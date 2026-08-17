@@ -50,7 +50,6 @@ Run from the repo root, in this order:
 ```bash
 bundle install
 npm ci
-npm run lint:prettier
 npm run lint:style-contract
 bundle exec jekyll build --baseurl /al-folio
 bash test/integration_comments.sh
@@ -76,7 +75,6 @@ All seven `test/integration_*.sh` scripts are gated by `unit-tests.yml`; run the
 ## Before you open a PR
 
 - Keep starter work here; route runtime behavior to the owning plugin repo.
-- Run `npm run lint:prettier` (Prettier with `@shopify/prettier-plugin-liquid`, `printWidth: 150`). `npx prettier . --write` fixes formatting.
 - Keep docs aligned with v1 ownership, and keep each fact in one place — link rather than restate.
 - If you create or keep local overrides of plugin-owned files, run `bundle exec al-folio upgrade overrides audit` and commit `.al-folio-overrides.yml` after review.
 
