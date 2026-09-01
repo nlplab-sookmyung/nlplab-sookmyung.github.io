@@ -1,0 +1,12 @@
+{%- comment -%}
+  Site-local bibliography hook.
+
+  `al_folio_core`'s `_layouts/bib.liquid` includes this file (its only
+  documented extension point) right before it assembles the `.periodical`
+  line, so `entrytype` can still be rewritten here.
+
+  For @inproceedings / @incollection the gem renders `<em>In {{ booktitle }}</em>`.
+  Our booktitles already read "Proceedings of ..." / "Findings of ...", so the
+  forced "In " prefix is redundant — drop it.
+{%- endcomment -%}
+{%- assign entrytype = entrytype | replace: '<em>In ', '<em>' -%}
