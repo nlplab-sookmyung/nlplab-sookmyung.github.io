@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-19'
+  last_updated: '2026-09-02'
 papers:
   queGQ5UAAAAJ:-f6ydRqryjwC:
     citations: 15
@@ -50,7 +50,7 @@ papers:
     title: Llamion Technical Report
     year: '2026'
   queGQ5UAAAAJ:7PzlFSSx8tAC:
-    citations: 10
+    citations: 11
     title: 'Dense-to-question and sparse-to-answer: Hybrid retriever system for industrial frequently asked questions'
     year: '2022'
   queGQ5UAAAAJ:8AbLer7MMksC:
@@ -90,7 +90,7 @@ papers:
     title: A study on proficiency in solving riddles of large language model
     year: '2023'
   queGQ5UAAAAJ:IWHjjKOFINEC:
-    citations: 29
+    citations: 30
     title: 'AI for Patents: A Novel Yet Effective and Efficient Framework for Patent Analysis.'
     year: '2022'
   queGQ5UAAAAJ:IjCSPb-OGe4C:
@@ -142,7 +142,7 @@ papers:
     title: 'KEBAP: Korean error explainable benchmark dataset for ASR and post-processing'
     year: '2023'
   queGQ5UAAAAJ:OU6Ihb5iCvQC:
-    citations: 3
+    citations: 4
     title: Improving semantic proximity in information retrieval through cross-lingual alignment
     year: '2026'
   queGQ5UAAAAJ:R3hNpaxXUhUC:
@@ -158,7 +158,7 @@ papers:
     title: 'K-nct: Korean neural grammatical error correction gold-standard test set using novel error type classification criteria'
     year: '2022'
   queGQ5UAAAAJ:SP6oXDckpogC:
-    citations: 6
+    citations: 7
     title: 'Debate only when necessary: Adaptive multiagent collaboration for efficient llm reasoning (2025)'
     year: Unknown Year
   queGQ5UAAAAJ:TQgYirikUcIC:
@@ -250,11 +250,11 @@ papers:
     title: 'NEEDLECHAIN: Measuring Intact Context Comprehension Capability of Large Language Models'
     year: '2026'
   queGQ5UAAAAJ:a0OBvERweLwC:
-    citations: 20
+    citations: 21
     title: 'Mirage: A metric-intensive benchmark for retrieval-augmented generation evaluation'
     year: '2025'
   queGQ5UAAAAJ:abG-DnoFyZgC:
-    citations: 0
+    citations: 1
     title: 'Metric Calculating Benchmark: Code-Verifiable Complicate Instruction Following Benchmark for Large Language Models'
     year: '2025'
   queGQ5UAAAAJ:bEWYMUwI8FkC:
@@ -266,7 +266,7 @@ papers:
     title: Uncovering the risks and drawbacks associated with the use of synthetic data for grammatical error correction
     year: '2023'
   queGQ5UAAAAJ:cFHS6HbyZ2cC:
-    citations: 22
+    citations: 23
     title: 'Flex: A benchmark for evaluating robustness of fairness in large language models'
     year: '2025'
   queGQ5UAAAAJ:dfsIfKJdRG4C:
@@ -294,7 +294,7 @@ papers:
     title: 'Toward Preventing Cold-start Problem: Basis Recommendation System'
     year: '2022'
   queGQ5UAAAAJ:f2IySw72cVMC:
-    citations: 7
+    citations: 9
     title: Cross-lingual optimization for language transfer in large language models
     year: '2025'
   queGQ5UAAAAJ:fPk4N6BV_jEC:
@@ -326,11 +326,11 @@ papers:
     title: 'Self-Improving-Leaderboard (SIL): A Call for Real-World Centric Natural Language Processing Leaderboards'
     year: '2023'
   queGQ5UAAAAJ:isC4tDSrTZIC:
-    citations: 20
+    citations: 21
     title: Towards diverse and effective question-answer pair generation from children storybooks
     year: '2023'
   queGQ5UAAAAJ:j3f4tGmQtD8C:
-    citations: 182
+    citations: 185
     title: A survey on evaluation metrics for machine translation
     year: '2023'
   queGQ5UAAAAJ:kRWSkSYxWN8C:
@@ -422,7 +422,7 @@ papers:
     title: 'LimaCost: Data Valuation for Instruction Tuning of Large Language Models.'
     year: '2025'
   queGQ5UAAAAJ:yD5IFk8b50cC:
-    citations: 31
+    citations: 32
     title: 'Debate only when necessary: Adaptive multiagent collaboration for efficient llm reasoning'
     year: '2025'
   queGQ5UAAAAJ:zA6iFVUQeVQC:
