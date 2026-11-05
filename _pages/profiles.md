@@ -93,17 +93,26 @@ nav_order: 1
   }
   .people-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
   }
   @media (max-width: 768px) {
+    .people-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 480px) {
     .people-grid {
       grid-template-columns: 1fr;
     }
   }
+  .people-group-title {
+    margin-bottom: 1.25rem;
+  }
   .people-card {
     text-align: center;
-    padding: 1.75rem 1.25rem;
+    padding: 1.5rem 1rem;
     border: 1px solid var(--global-divider-color);
     border-radius: 14px;
     transition:
@@ -120,6 +129,10 @@ nav_order: 1
   }
   .people-card .people-info {
     margin-top: 1rem;
+  }
+  .people-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
   }
   .people-title {
     font-size: 1.4rem;
@@ -149,11 +162,6 @@ nav_order: 1
     margin: 0 0.4rem;
     font-size: 1.4rem;
   }
-  .people-empty {
-    text-align: center;
-    opacity: 0.6;
-    padding: 2rem 0;
-  }
 </style>
 
 {% assign pi = site.data.people.pi %}
@@ -182,12 +190,11 @@ nav_order: 1
 
 <hr />
 
-<h2>students</h2>
-
-{% if site.data.people.students and site.data.people.students.size > 0 %}
-
+{% for group in site.data.people.student_groups %}
+  {% if group.members and group.members.size > 0 %}
+  <h2 class="people-group-title">{{ group.title }}</h2>
   <div class="people-grid">
-    {% for s in site.data.people.students %}
+    {% for s in group.members %}
       <div class="people-card">
         {% if s.photo %}
           {% assign s_image_path = s.photo | prepend: 'assets/img/' %}
@@ -208,6 +215,5 @@ nav_order: 1
       </div>
     {% endfor %}
   </div>
-{% else %}
-  <p class="people-empty">-</p>
-{% endif %}
+  {% endif %}
+{% endfor %}
