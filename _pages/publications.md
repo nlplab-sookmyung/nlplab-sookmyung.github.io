@@ -150,6 +150,10 @@ nav_order: 2
     flex: none;
     padding: 0;
     margin-bottom: 0;
+    /* match the title line height so the taller badge does not stretch
+       the first grid row and push the author list down */
+    height: 1.35rem;
+    overflow: visible;
   }
   .publications ol.bibliography li .row > .col-sm-8 {
     display: contents;
@@ -181,6 +185,7 @@ nav_order: 2
   .publications ol.bibliography li .links {
     grid-area: links;
     align-self: start;
+    padding-top: 0.4rem;
   }
 </style>
 
