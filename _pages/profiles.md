@@ -7,6 +7,8 @@ nav: true
 nav_order: 1
 ---
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+
 <style>
   :root {
     --global-theme-color: #2c4a6e;
@@ -69,7 +71,7 @@ nav_order: 1
     gap: 2rem;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
     padding-bottom: 2.5rem;
     border-bottom: 1px solid var(--global-divider-color);
   }
@@ -93,8 +95,8 @@ nav_order: 1
   }
   .people-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1.25rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
     margin-bottom: 2.5rem;
   }
   @media (max-width: 768px) {
@@ -108,7 +110,11 @@ nav_order: 1
     }
   }
   .people-group-title {
-    margin-bottom: 1.25rem;
+    font-family: "Montserrat", "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 0.04em;
+    margin: 0 0 1.75rem;
   }
   .people-card {
     text-align: center;
@@ -124,14 +130,14 @@ nav_order: 1
     transform: translateY(-2px);
   }
   .people-card img {
-    max-width: 140px;
+    max-width: 200px;
     margin: 0 auto;
   }
   .people-card .people-info {
     margin-top: 1rem;
   }
   .people-card h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 0.25rem;
   }
   .people-title {
@@ -187,8 +193,6 @@ nav_order: 1
     {% endif %}
   </div>
 </div>
-
-<hr />
 
 {% for group in site.data.people.student_groups %}
   {% if group.members and group.members.size > 0 %}
