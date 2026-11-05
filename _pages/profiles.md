@@ -208,10 +208,11 @@ nav_order: 1
           <h3>{{ s.name }}</h3>
           {% if s.role %}<p class="people-role">{{ s.role }}</p>{% endif %}
           {% if s.bio %}<p class="people-bio">{{ s.bio }}</p>{% endif %}
-          {% if s.email or s.homepage or s.scholar %}
+          {% if s.email or s.homepage or s.github or s.scholar %}
             <p class="people-links">
               {% if s.email %}<a href="mailto:{{ s.email }}" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
               {% if s.homepage %}<a href="{{ s.homepage }}" target="_blank" rel="noopener" title="Homepage"><i class="fa-solid fa-globe"></i></a>{% endif %}
+              {% if s.github %}<a href="{{ s.github }}" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>{% endif %}
               {% if s.scholar %}<a href="{{ s.scholar }}" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
             </p>
           {% endif %}

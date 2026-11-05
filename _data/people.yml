@@ -15,7 +15,7 @@ pi:
     - M.S. in Computer Scienceand Engineering, Korea University (Seoul) <br>
     - B.S. in Mathematics, Korea University (Seoul)
 
-# 학생 그룹: 그룹마다 제목(title) 아래에 한 줄 4명 그리드로 표시됩니다.
+# 학생 그룹: 그룹마다 제목(title) 아래에 한 줄 3명 그리드로 표시됩니다.
 # 위에서부터 순서대로 표시되고, 멤버가 없는 그룹은 숨겨집니다.
 # 새 그룹(예: Ph.D. Students)은 같은 형식으로 추가하세요. 멤버 필드는 name 외에 모두 선택입니다:
 #   - name: 이름
@@ -24,6 +24,7 @@ pi:
 #     bio: 한 줄 소개
 #     email: student@example.com
 #     homepage: https://example.com
+#     github: https://github.com/username
 #     scholar: https://scholar.google.com/citations?user=XXXXXXXX
 student_groups:
   - title: Undergraduate Research Students
@@ -32,3 +33,5 @@ student_groups:
         photo: undergraduates/yein-cho.png
       - name: Sunghyun Kim
         photo: undergraduates/sunghyun-kim.png
+        homepage: https://wis-hyun.github.io/
+        github: https://github.com/wis-hyun
