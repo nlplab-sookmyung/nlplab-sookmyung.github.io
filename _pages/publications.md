@@ -111,16 +111,23 @@ nav_order: 2
     font-weight: 600;
   }
   .publications ol.bibliography li .abbr abbr {
-    font-size: 0.68rem;
+    font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.01em;
     line-height: 1.25;
     border-radius: 6px;
-    padding: 0.2rem 0.4rem;
+    padding: 0.3rem 0.45rem;
     margin-bottom: 0;
     white-space: normal;
     text-align: center;
     background-color: var(--global-badge-color);
+  }
+  /* white text for every venue badge; the gem sets abbr color with !important,
+     and venues registered in _data/venues.yml wrap the label in a <div> */
+  .publications ol.bibliography li .abbr abbr,
+  .publications ol.bibliography li .abbr abbr div,
+  .publications ol.bibliography li .abbr abbr a {
+    color: #fff !important;
   }
   .publications ol.bibliography li .row {
     display: grid;

@@ -31,6 +31,8 @@
   color: "var(--global-badge-conference-color)"
 "NAACL Industry":
   color: "var(--global-badge-conference-color)"
+"NeurIPS":
+  color: "var(--global-badge-conference-color)"
 "SIGIR":
   color: "var(--global-badge-conference-color)"
 
@@ -43,6 +45,8 @@
 "KBS":
   color: "var(--global-badge-journal-color)"
 "Mathematics":
+  color: "var(--global-badge-journal-color)"
+"TKDD":
   color: "var(--global-badge-journal-color)"
 
 "arXiv":
