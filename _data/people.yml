@@ -31,6 +31,8 @@ student_groups:
     members:
       - name: Yein Jo
         photo: undergraduates/yein-cho.png
+        homepage: https://yein-jo-portfolio.vercel.app/
+        github: https://github.com/yeverycode
       - name: Sunghyun Kim
         photo: undergraduates/sunghyun-kim.png
         homepage: https://wis-hyun.github.io/
