@@ -29,11 +29,11 @@ pi:
 student_groups:
   - title: Undergraduate Research Students
     members:
-      - name: Yein Jo
+      - name: Yein Jo (조예인)
         photo: undergraduates/yein-cho.png
         homepage: https://yein-jo-portfolio.vercel.app/
         github: https://github.com/yeverycode
-      - name: Sunghyun Kim
+      - name: Sunghyun Kim (김성현)
         photo: undergraduates/sunghyun-kim.png
         homepage: https://wis-hyun.github.io/
         github: https://github.com/wis-hyun
