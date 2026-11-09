@@ -114,6 +114,38 @@ announcements:
     letter-spacing: -0.02em;
     font-size: clamp(2.75rem, 6vw, 4rem);
     line-height: 1.05;
+    /* shrink to the text width so the logo below can be placed relative to it */
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Faded lab logo tucked behind the left side of the title. The SVG is a
+     navy outline, so it is used as a mask and painted white to show on the band.
+     Sizes are in em of the title, so it scales with the clamp() font size. */
+  .post-title::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    right: calc(100% - 1.4em);
+    width: 3.4em;
+    height: 3.4em;
+    transform: translateY(-42%);
+    background-color: #fff;
+    -webkit-mask: url("{{ '/assets/img/icon/smu_nlp_icon_only.svg' | relative_url }}") center / contain no-repeat;
+    mask: url("{{ '/assets/img/icon/smu_nlp_icon_only.svg' | relative_url }}") center / contain no-repeat;
+    opacity: 0.16;
+    pointer-events: none;
+  }
+  /* on phones the title nearly fills the width, so shrink the logo and
+     overlap more to keep it from running off the left edge */
+  @media (max-width: 576px) {
+    .post-title::before {
+      right: calc(100% - 1.8em);
+      width: 2.8em;
+      height: 2.8em;
+    }
   }
   .post-header .desc {
     font-size: 1.15rem;
