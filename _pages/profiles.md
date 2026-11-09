@@ -10,21 +10,21 @@ nav_order: 1
 <style>
   @font-face {
     font-family: "Bithumb Gothic";
-    src: url("{{ '/assets/fonts/Bithumb/BithumbGothic-Basic.otf' | relative_url }}") format("opentype");
+    src: url("{{ '/assets/fonts/Bithumb/BithumbGothic-Basic.woff2' | relative_url }}") format("woff2");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "Bookk Gothic";
-    src: url("{{ '/assets/fonts/BookkGothic/BookkGothic_Light.ttf' | relative_url }}") format("truetype");
+    src: url("{{ '/assets/fonts/BookkGothic/BookkGothic_Light.woff2' | relative_url }}") format("woff2");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "Bookk Gothic";
-    src: url("{{ '/assets/fonts/BookkGothic/BookkGothic_Bold.ttf' | relative_url }}") format("truetype");
+    src: url("{{ '/assets/fonts/BookkGothic/BookkGothic_Bold.woff2' | relative_url }}") format("woff2");
     font-weight: 700;
     font-style: normal;
     font-display: swap;

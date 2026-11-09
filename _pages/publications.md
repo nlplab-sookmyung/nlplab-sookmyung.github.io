@@ -11,42 +11,42 @@ nav_order: 2
 <style>
   @font-face {
     font-family: "SUIT";
-    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-Regular.ttf' | relative_url }}") format("truetype");
+    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-Regular.woff2' | relative_url }}") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "SUIT";
-    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-Medium.ttf' | relative_url }}") format("truetype");
+    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-Medium.woff2' | relative_url }}") format("woff2");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "SUIT";
-    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-SemiBold.ttf' | relative_url }}") format("truetype");
+    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-SemiBold.woff2' | relative_url }}") format("woff2");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "SUIT";
-    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-Bold.ttf' | relative_url }}") format("truetype");
+    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-Bold.woff2' | relative_url }}") format("woff2");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "SUIT";
-    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-ExtraBold.ttf' | relative_url }}") format("truetype");
+    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-ExtraBold.woff2' | relative_url }}") format("woff2");
     font-weight: 800;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "SUIT";
-    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-Heavy.ttf' | relative_url }}") format("truetype");
+    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-Heavy.woff2' | relative_url }}") format("woff2");
     font-weight: 900;
     font-style: normal;
     font-display: swap;
