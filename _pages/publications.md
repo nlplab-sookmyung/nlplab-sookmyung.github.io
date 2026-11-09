@@ -9,6 +9,49 @@ nav_order: 2
 <!-- _pages/publications.md -->
 
 <style>
+  @font-face {
+    font-family: "SUIT";
+    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-Regular.ttf' | relative_url }}") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "SUIT";
+    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-Medium.ttf' | relative_url }}") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "SUIT";
+    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-SemiBold.ttf' | relative_url }}") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "SUIT";
+    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-Bold.ttf' | relative_url }}") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "SUIT";
+    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-ExtraBold.ttf' | relative_url }}") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "SUIT";
+    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-Heavy.ttf' | relative_url }}") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
   :root {
     --global-theme-color: #2c4a6e;
     --global-hover-color: #3a6089;
@@ -76,6 +119,7 @@ nav_order: 2
   }
 
   .publications {
+    font-family: "SUIT", "Roboto", sans-serif;
     font-size: 0.92rem;
   }
   div.publications h2.bibliography {
@@ -108,11 +152,12 @@ nav_order: 2
   }
   .publications ol.bibliography li .title {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
   }
   .publications ol.bibliography li .abbr abbr {
+    font-family: "SUIT", "Roboto", sans-serif;
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: 900;
     letter-spacing: 0.01em;
     line-height: 1.25;
     border-radius: 6px;

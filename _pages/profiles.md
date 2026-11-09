@@ -7,9 +7,29 @@ nav: true
 nav_order: 1
 ---
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
-
 <style>
+  @font-face {
+    font-family: "Bithumb Gothic";
+    src: url("{{ '/assets/fonts/Bithumb/BithumbGothic-Basic.otf' | relative_url }}") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Bookk Gothic";
+    src: url("{{ '/assets/fonts/BookkGothic/BookkGothic_Light.ttf' | relative_url }}") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Bookk Gothic";
+    src: url("{{ '/assets/fonts/BookkGothic/BookkGothic_Bold.ttf' | relative_url }}") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
   :root {
     --global-theme-color: #2c4a6e;
     --global-hover-color: #3a6089;
@@ -89,6 +109,12 @@ nav_order: 1
     object-fit: cover;
     border-radius: 50%;
   }
+  /* name, role, address and bio of the professor and students */
+  .people-info,
+  .people-info h2,
+  .people-info h3 {
+    font-family: "Bookk Gothic", "Roboto", sans-serif;
+  }
   .people-pi .people-info {
     flex: 1;
     min-width: 240px;
@@ -110,10 +136,10 @@ nav_order: 1
     }
   }
   .people-group-title {
-    font-family: "Montserrat", "Roboto", sans-serif;
+    font-family: "Bithumb Gothic", "Roboto", sans-serif;
     font-weight: 700;
     font-size: 1.6rem;
-    letter-spacing: 0.04em;
+    letter-spacing: 0;
     margin: 0 0 1.75rem;
   }
   .people-card {
@@ -140,7 +166,8 @@ nav_order: 1
     font-size: 1.2rem;
     margin-bottom: 0.25rem;
   }
-  .people-title {
+  .people-info .people-title {
+    font-family: "Bithumb Gothic", "Roboto", sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     letter-spacing: -0.01em;
