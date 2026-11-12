@@ -33,6 +33,8 @@
   color: "var(--global-badge-conference-color)"
 "NeurIPS":
   color: "var(--global-badge-conference-color)"
+"NeurIPS E&D":
+  color: "var(--global-badge-conference-color)"
 "SIGIR":
   color: "var(--global-badge-conference-color)"
 

@@ -10,37 +10,16 @@ nav_order: 2
 
 <style>
   @font-face {
-    font-family: "SUIT";
-    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-Regular.woff2' | relative_url }}") format("woff2");
-    font-weight: 400;
+    font-family: "Bookk Gothic";
+    src: url("{{ '/assets/fonts/BookkGothic/BookkGothic_Light.woff2' | relative_url }}") format("woff2");
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
-    font-family: "SUIT";
-    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-Medium.woff2' | relative_url }}") format("woff2");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "SUIT";
-    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-SemiBold.woff2' | relative_url }}") format("woff2");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "SUIT";
-    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-Bold.woff2' | relative_url }}") format("woff2");
+    font-family: "Bookk Gothic";
+    src: url("{{ '/assets/fonts/BookkGothic/BookkGothic_Bold.woff2' | relative_url }}") format("woff2");
     font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "SUIT";
-    src: url("{{ '/assets/fonts/SUIT-ttf/SUIT-ExtraBold.woff2' | relative_url }}") format("woff2");
-    font-weight: 800;
     font-style: normal;
     font-display: swap;
   }
@@ -119,7 +98,7 @@ nav_order: 2
   }
 
   .publications {
-    font-family: "SUIT", "Roboto", sans-serif;
+    font-family: "Bookk Gothic", "Roboto", sans-serif;
     font-size: 0.92rem;
   }
   div.publications h2.bibliography {
